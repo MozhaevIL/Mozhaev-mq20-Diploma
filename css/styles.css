@@ -1,3 +1,110 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}  /*временно*/
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+}  /*временно*/
+
+body {
+  margin: 0;
+  width: 320px; /*временно*/
+  font-family: open sans;
+}
+
 .site-header {
+  position: relative;
+  z-index: 2;
+  background-image: url(https://github.com/MozhaevIL/Mozhaev-mq20-Diploma/blob/master/images/football_767.jpg?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+.site-header::before {
+  content:"";
+  position: absolute;
   background-color: #0a0e34;
-  opacity: 0.1; 
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+  .header-content {
+    position: relative;
+    z-index: 3;
+    padding: 10% 6.25% 25% 6.25%;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+.surface-logo-text {
+   fill: #ffffff;
+   width: 40%;
+}
+
+.site-title {
+  font-weight: bold;
+  text-align: left;
+  margin-top: 135px; /*временно*/
+}
+
+.site-title-first, .site-title-second {
+  font-size: 28px;
+  margin: 0;
+}
+
+.site-title-second {
+  padding-left: 13.75%;
+  margin-top: 0.5em;
+  margin-bottom: 90px; /*временно*/
+}
+
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  font-size: 8px;
+  height: 4.35em;
+  line-height: 0;
+  text-align: left;
+  text-transform: uppercase;
+  padding-left: 10.25em;
+  border: 0;
+  border-radius: 4.35em;
+  background-color: #5e42b0;
+  color: #ffffff;
+}
+
+.download-button:nth-child(even) {
+  margin-top: 1.75em;
+}
+
+.button-logo {
+  height: 3em;
+  fill: #ffffff;
+}
+
+.button-text {
+  margin-left: 1em;
+  line-height: 0.5em;
+ }
+
+.download-message {
+  margin-bottom: 1em;
+}
+
+.download-from {
+ font-weight: bold;
+}
