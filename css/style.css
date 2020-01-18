@@ -14,7 +14,6 @@
 
 body {
   margin: 0;
-  width: 320px; /*временно*/
   font-family: open sans;
 }
 
@@ -24,6 +23,7 @@ body {
   background-image: url(https://github.com/MozhaevIL/Mozhaev-mq20-Diploma/blob/master/images/football_767.jpg?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
+  
   }
 
 .site-header::before {
@@ -36,13 +36,15 @@ body {
   z-index: 2;
 }
 
-  .header-content {
-    position: relative;
-    z-index: 3;
-    padding: 10% 6.25% 25% 6.25%;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: center;
+.header-content {
+  paddingt: 10% 6.25% 25% 6.25%;  
+  position: relative;
+  z-index: 3;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+    
+    
   }
 
 .surface-logo-text {
@@ -87,6 +89,10 @@ body {
   color: #ffffff;
 }
 
+.download-button:focus {
+  outline: 0;
+}
+
 .download-button:nth-child(even) {
   margin-top: 1.75em;
 }
@@ -107,4 +113,206 @@ body {
 
 .download-from {
  font-weight: bold;
+}
+
+.site-content {
+  
+}
+
+.top-section-athlets {
+  position: relative;
+  display: flex;
+  flex-direction: column;  
+  background: url(https://github.com/MozhaevIL/Mozhaev-mq20-Diploma/blob/master/images/footballer_192.png?raw=true) no-repeat center top 5rem;
+  background-size: 60%;
+ }
+
+.top-section-players { 
+  position: relative;
+  background: url(https://github.com/MozhaevIL/Mozhaev-mq20-Diploma/blob/master/images/basketballer_302.png?raw=true) no-repeat center top 5rem;
+  background-size: 86%;
+  }
+
+.top-section-header {
+  padding: 1.5rem 6.25% 15rem 6.25%;
+ }
+
+.top-section-title {
+  margin: 0;
+  font-size: 50px;
+  color: #e7e7e7;
+  line-height: 1;
+  text-transform: uppercase;
+  }
+
+.top-articles-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-article-header {
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+  display: flex;
+  flex-direction: row;
+}
+
+.top-article-01 {
+  position: relative;
+  z-index: -1;
+  background-color: #fafafa;
+  padding-top: 5.125rem;
+  padding-bottom: 3.25rem;
+  }
+
+.top-article-0102-number {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  margin-right: 3%;
+}
+
+.top-article-0102-number:after {
+  content: "";
+  display: block;
+  height: 0.28em;
+  width: 100%;
+  background-color:#5e42b0;
+  margin-top: 0.2em;
+}
+
+.top-article-title {
+  font-size: 23px;
+  font-weight: bold;
+  color: #c1c1c1;
+  text-transform: uppercase;
+}
+
+.top-article-0102-content, .athlets-article-03-content, .players-article-03-content {
+  font-size: 15px;
+  line-height: 18px;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+}
+
+.top-article-02 {
+  background-color: #f5f4f9;
+  padding-top: 3.75rem;
+  padding-bottom: 3.125rem;
+  }
+
+.athlets-article-03 {
+  background-color: #5e42b0;
+  padding-top: 3.75rem;
+  padding-bottom: 3.125rem;
+}
+
+.athlets-article-03-number {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  margin-right: 3%;
+}
+
+.athlets-article-03-number:after {
+  content: "";
+  display: block;
+  height: 0.28em;
+  width: 100%;
+  background-color:#ffffff;
+  margin-top: 0.2em;
+}
+
+.athlets-article-03-content {
+  color: #ffffff;
+}
+
+.players-article-03 {
+  background-color: #090c35;
+  padding-top: 3.75rem;
+  padding-bottom: 3.125rem;
+}
+
+.players-article-03-number {
+  font-size: 14px;
+  font-weight: bold;
+  color: #8765dd;
+  margin-right: 3%;
+}
+
+.players-article-03-number:after {
+  content: "";
+  display: block;
+  height: 0.28em;
+  width: 100%;
+  background-color:#ffffff;
+  margin-top: 0.2em;
+}
+
+.players-article-03-content {
+  color: #ffffff;
+}
+
+.what-to-do-article {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.what-to-do-number-block {
+  display: block;
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 5em;
+  height: 5em;
+  padding-top: 2.5em;
+  background-color: #5e42b0;
+  color: #f5f6f7;
+  line-height: 0;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 6.25%;
+  text-align: center;
+ }
+
+.what-to-do-number {
+  display: inline-block;
+  position: relative;
+}
+
+.what-to-do-number:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.28em;
+  width: 100%;
+  background-color:#8f7bc8;
+  margin-top: 0.86em;
+  
+}
+
+
+.what-to-do-title {
+  font-size: 28px;
+  margin: 0;
+  padding-left: 6.25%;
+  padding-top: 1em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  line-height: 1;
+  
+}
+
+.what-to-do-content {
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 6.25%;
+  padding-bottom: 5em;
+  
+}
+
+.surface-button { /*временно*/
+  height: 5em;
+  width: 5em;
 }
