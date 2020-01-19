@@ -411,9 +411,8 @@ body {
 }
 
 @media (max-width: 640px) {
-.top-article-0102-number {
+.top-article-0102-number, .athlets-article-03-number, .players-article-03-number {
   font-size: 14px;
-  padding-left: 
  }
 }
 
@@ -574,7 +573,6 @@ body {
 }
 
 .players-article-03-number {
-  font-size: 14px;
   font-weight: bold;
   color: #8765dd;
   margin-right: 3%;
@@ -949,3 +947,5 @@ flex-direction: column;
   width: 10%;
 }
 }
+
+
