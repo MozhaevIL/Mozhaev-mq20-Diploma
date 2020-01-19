@@ -235,15 +235,12 @@ body {
 
 .button-text {
   margin-left: 1em;
-  line-height: 0.5em;
+  line-height: 1.5em;
  }
 
-.download-message {
-  margin-bottom: 1em;
-}
-
 .download-from {
- font-weight: bold;
+  padding-top: 1em;
+  font-weight: bold;
 }
 
 
