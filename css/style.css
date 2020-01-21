@@ -485,6 +485,7 @@ body {
 @media (min-width: 961px) {
   .top-section-athlets .top-section-title, .top-section-athlets .top-article-header, .top-section-athlets .top-article-0102-content, .athlets-article-03-content {
     padding-left: 52%;
+    padding-right: 6.25%;
   }
  
  
