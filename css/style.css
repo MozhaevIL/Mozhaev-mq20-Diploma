@@ -3,14 +3,14 @@
   src: url("https://mozhaevil.github.io/Mozhaev-mq20-Diploma/fonts/OpenSans-Regular.woff");
   font-weight: 400;
   font-style: normal;
-}  /*временно*/
+}  
 
 @font-face {
   font-family: "Open Sans";
   src: url("https://mozhaevil.github.io/Mozhaev-mq20-Diploma/fonts/OpenSans-Bold.woff");
   font-weight: 700;
   font-style: normal;
-}  /*временно*/
+}  
 
 body {
   margin: 0;
@@ -104,26 +104,30 @@ body {
 }
 
 .site-title {
+  margin-top: 135px;
   font-weight: bold;
   text-align: left;
-  margin-top: 135px; /*временно*/
+   
 }
 
 @media (max-width: 640px) {
   .site-title {
+    margin-bottom: 85px;
     font-size: 28px;
  }
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
   .site-title {
+    margin-bottom: 310px;
     padding-left: 12%;
     font-size: 64px;
  }
 }
 
 @media (min-width: 961px) {
-  .site-title {
+  .site-title {    
+    margin-bottom: 220px;
     padding-left: 10%;
     font-size: 90px;
  }
@@ -131,6 +135,7 @@ body {
 
 .site-title-first, .site-title-second {
   margin: 0;
+  display: block;
 }
 
 @media (max-width: 960px) {
@@ -142,13 +147,9 @@ body {
 @media (min-width: 961px) {
   .site-title-second {
   padding-left: 23%;
-  margin-bottom: 220px;
  }
 }
 
-.site-title-second {
-  margin-bottom: 90px; /*временно*/
-}
 
 .download-buttons {
   display: flex;
@@ -173,15 +174,16 @@ body {
 .download-button {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 8px;
   height: 4.35em;
   line-height: 0;
-  text-align: left;
   text-transform: uppercase;
   border: 0;
   border-radius: 4.35em;
   background-color: #5e42b0;
   color: #ffffff;
+  text-decoration: none;
 }
 
 @media (max-width: 640px) {
@@ -190,8 +192,7 @@ body {
     max-width: 300px;
     height: 35px;
     font-size: 8px;
-    justify-content: center;
-  
+     
   }   
 }
 
@@ -201,8 +202,7 @@ body {
   height: 80px;
   width: 40%;
   margin-right: 3.5%;
-  justify-content: center;
- }
+  }
 }
 
 @media (min-width: 961px) {
@@ -212,15 +212,9 @@ body {
   width: 15%;
   min-width: 220px;
   margin-right: 2.6%;
-  justify-content: center;
   }
 }
 
-@media (min-width: 961px) {
- .download-button:hover {
-  cursor: pointer;
-  }
-}
 
 @media (max-width: 640px) {
   .download-button:nth-child(even) {
@@ -234,13 +228,16 @@ body {
 }
 
 .button-text {
-  margin-left: 1em;
-  line-height: 1.5em;
+  line-height: 0.5;
+  padding-left: 0.5em;
+  display: block;
+  text-align: left;
  }
 
 .download-from {
   padding-top: 1em;
   font-weight: bold;
+  display: block;
 }
 
 
@@ -255,31 +252,28 @@ body {
 
 .footballer-container {
   position: absolute;
-  left: 20%;
-  top: 28px;
   z-index: 3;
  }
 
 @media (max-width: 640px) {
   .footballer-container {
     top: 80px;
-    margin-left: auto;
-    margin-right: auto;
+   left: calc(50% - 96px);
     }
 }  
 
 @media (min-width: 641px) and (max-width: 960px) {
   .footballer-container {
     top: 95px;
-    left: -20vw;
+    left: -170px;
   }
 }  
 
 
 @media (min-width: 961px) {
   .footballer-container {
-    left: 20%;
     top: 28px;
+    right: 48%;
     }
 }  
   
@@ -292,8 +286,7 @@ body {
 @media (max-width: 640px) {
   .basketballer-container {
     top: 80px;
-    margin-left: auto;
-    margin-right: auto;
+    left: calc(50% - 151px);
   }
 }  
 
@@ -301,23 +294,23 @@ body {
 @media (min-width: 641px) and (max-width: 960px) {
 .basketballer-container {
   right: 0;
-  bottom: 150px;
+  top: 60px;
   }
 }
 
 
 @media (min-width: 961px) {
 .basketballer-container {
-  right: 13%;
-  bottom: 30px;
+  left: 43%;
+  top: 30px;
   }
 }
 
 
 @media (max-width: 640px) {
 .top-section-header {
-  padding-top: 1.5rem;
-  padding-bottom:15rem;
+  padding-top: 24px;
+  padding-bottom: 240px;
  }
 }
 
@@ -591,7 +584,10 @@ body {
 
 .what-to-do-article, .what-to-do-article-reverse {
   display: flex;
-  position: relative;
+  }
+
+.what-to-do-container {
+    position: relative;
 }
   
   @media (max-width: 960px) {
@@ -626,7 +622,7 @@ body {
 
 }
   
-.what-to-do-number-block {
+.what-to-do-number-block, .what-to-do-number-block-reverse {
   display: block;
   box-sizing: border-box;
   background-color: #5e42b0;
@@ -638,28 +634,36 @@ body {
  }
 
 @media(max-width: 960px) {
-  .what-to-do-number-block {
+  .what-to-do-number-block, .what-to-do-number-block-reverse  {
   font-size: 14px;
   width: 5em;
   height: 5em;
   padding-top: 2.5em;
-  top: 90vw;
+  top: -4.2em;
   left: 6.25%;
-  text-align: center;
- }
+  }
 }
 
 @media(min-width: 961px) {
-  .what-to-do-number-block {
+  .what-to-do-number-block, .what-to-do-number-block-reverse  {
   font-size: 24px;
-  width: 11.5vw;
-  height: 11.5vw;
-  padding-top: calc(5.75vw - 0.5em);
+  width: 8.75vw;
+  height: 8.75vw;
+  padding-top: calc(4.375vw - 0.5em);
   top: 27%;
-  left: calc(50% - 5.75vw);
-  text-align: center;
+ }
+
+
+.what-to-do-number-block  {
+  left: -4.375vw;
+ }
+
+
+.what-to-do-number-block-reverse  {
+  right: -4.375vw;
  }
 }
+
 
 .what-to-do-number {
   display: inline-block;
@@ -689,7 +693,7 @@ body {
 .what-to-do-title, .what-to-do-title-reverse {
   font-size: 28px;
   padding-left: 6.25%;
- }
+   }
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
@@ -702,13 +706,15 @@ body {
 @media (min-width: 961px) {
 .what-to-do-title {
   font-size: 80px;
-  padding-left: calc(5.75vw + 2.5%);
+  padding-left: 6.7vw;
+  padding-top: 13.5vw;
   }
   
   .what-to-do-title-reverse {
   font-size: 80px;
-  padding-right: calc(5.75vw + 2.5%);
+  padding-right: 6.7vw;
   padding-left: 10%;
+  padding-top: 13.5vw;
   }
   
 }
@@ -805,6 +811,14 @@ flex-direction: column;
   }
 }
 
+
+@media (max-width: 640px) {
+  .footer-flex {
+    margin-bottom: 85px;
+  }
+}
+  
+
 @media (min-width: 641px) and (max-width: 960px) {
   .footer-flex {
     margin-bottom: 37.5vw;
@@ -829,33 +843,36 @@ flex-direction: column;
 
 @media (max-width: 640px) {
  .surface-button {
-  margin-left: auto;
-  margin-right: auto;
   height: 5em;
   width: 5em;
    }
 }
 
-
 @media (min-width: 640px) and (max-width: 960px) {
  .surface-button {
   width: 130px;
   height: 130px;
-  margin-left: auto;
-  margin-right: auto;
    }
+}
+
+@media (max-width: 960px) {
+  .surface-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
  @media (min-width: 961px) {
  .surface-button {
   width: 137px;
-  height: 137px;
+  height: 137px;   
    }
 }
 
 
 .surface-logo {
-  height: 67%;
+  height: 67%;  
+  padding-top: 16.5%; 
   fill: #ffffff;
 }
 
@@ -909,7 +926,6 @@ flex-direction: column;
 .download-invitation-motivation {
   margin: 0;
   font-size: 14px;
-  padding-bottom: 5.43em;
  }
 }
 
