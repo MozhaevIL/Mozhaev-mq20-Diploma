@@ -1,46 +1,29 @@
 @font-face {
-  font-family: "Open Sans";
-  src: url("https://mozhaevil.github.io/Mozhaev-mq20-Diploma/fonts/OpenSans-Regular.woff");
+  font-family: "open-sans";
+  src: url("../fonts/OpenSans-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }  
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("https://mozhaevil.github.io/Mozhaev-mq20-Diploma/fonts/OpenSans-Bold.woff");
+  font-family: "open-sans";
+  src: url("../fonts/OpenSans-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }  
 
 body {
   margin: 0;
-  font-family: open sans;
+  font-family: open-sans;
 }
 
 .site-header {
   position: relative;
   z-index: 1;
+  background-image: url(../images/football_767.jpg?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-}
-
-@media (max-width: 640px) {
-  .site-header {
-  background-image: url(https://github.com/MozhaevIL/Mozhaev-mq20-Diploma/blob/master/images/football_767.jpg?raw=true);
-  }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-  .site-header {
-  background-image: url(https://github.com/MozhaevIL/Mozhaev-mq20-Diploma/blob/master/images/football_1280.jpg?raw=true);
-  }
-}
-
-@media (min-width: 961px) {
- .site-header {
-  background-image: url(https://github.com/MozhaevIL/Mozhaev-mq20-Diploma/blob/master/images/football_1920.jpg?raw=true);;
-  }
 }
 
 .site-header::before {
@@ -54,6 +37,7 @@ body {
 }
 
 .header-content {
+  padding: 30px 6.25% 85px 6.25%;
   position: relative;
   z-index: 3;
   color: #ffffff;
@@ -61,76 +45,18 @@ body {
   text-align: center;
 }
 
-@media (max-width: 640px) {
-  .header-content {
-  padding: 30px 6.25% 85px 6.25%;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-  .header-content {
-  padding-top: 36px;
-  padding-bottom: 88px;
-  }
-}
-
-@media (min-width: 961px) {
-  .header-content {
-  padding-top: 45px;
-  padding-bottom: 110px;
-  }
-}
-
 .surface-logo-text {
-   fill: #ffffff;
-}
-
-@media (max-width: 640px) {
-  .surface-logo-text {
-    width: 40%;
-  }  
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-  .surface-logo-text {
-    width: 27%;
-  }  
-}
-
-@media (min-width: 961px) {
- .surface-logo-text {
-    width: 10%;
-  }  
+  width: 40%; 
+  fill: #ffffff;
 }
 
 .site-title {
   margin-top: 135px;
+  margin-bottom: 85px;
+  font-size: 28px;
   font-weight: bold;
   text-align: left;
    
-}
-
-@media (max-width: 640px) {
-  .site-title {
-    margin-bottom: 85px;
-    font-size: 28px;
- }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-  .site-title {
-    margin-bottom: 310px;
-    padding-left: 12%;
-    font-size: 64px;
- }
-}
-
-@media (min-width: 961px) {
-  .site-title {    
-    margin-bottom: 220px;
-    padding-left: 10%;
-    font-size: 90px;
- }
 }
 
 .site-title-first, .site-title-second {
@@ -138,46 +64,25 @@ body {
   display: block;
 }
 
-@media (max-width: 960px) {
-  .site-title-second {
-  padding-left: 13.75%;
+.site-title-second {
+  margin-left: 13.75%;
  }
-}
-
-@media (min-width: 961px) {
-  .site-title-second {
-  padding-left: 23%;
- }
-}
-
 
 .download-buttons {
   display: flex;
   flex-direction: column;
-}
-
-@media (max-width: 640px) {
-  .download-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-}  
-
-@media (min-width: 641px) {
-  .download-buttons {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
+  align-items: center;
 }
   
 .download-button {
+  width: 87.5%;
+  max-width: 300px;
+  height: 35px;
+  font-size: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 8px;
-  height: 4.35em;
-  line-height: 0;
   text-transform: uppercase;
   border: 0;
   border-radius: 4.35em;
@@ -186,40 +91,8 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 640px) {
-  .download-button {
-    width: 87.5%;
-    max-width: 300px;
-    height: 35px;
-    font-size: 8px;
-     
-  }   
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-  .download-button {
-  font-size: 14px;
-  height: 80px;
-  width: 40%;
-  margin-right: 3.5%;
-  }
-}
-
-@media (min-width: 961px) {
- .download-button {
-  font-size: 14px;
-  height: 80px;
-  width: 15%;
-  min-width: 220px;
-  margin-right: 2.6%;
-  }
-}
-
-
-@media (max-width: 640px) {
-  .download-button:nth-child(even) {
+.download-button:nth-child(even) {
   margin-top: 1.75em;
-}
 }
   
 .button-logo {
@@ -228,19 +101,14 @@ body {
 }
 
 .button-text {
-  line-height: 0.5;
   padding-left: 0.5em;
-  display: block;
   text-align: left;
  }
 
 .download-from {
-  padding-top: 1em;
   font-weight: bold;
   display: block;
 }
-
-
 
 .top-section-athlets, .top-section-players {
   position: relative;
@@ -250,173 +118,59 @@ body {
   overflow: hidden;
 }
 
-
 .footballer-container {
+  top: 80px;
+  left: calc(50% - 96px);
   position: absolute;
   z-index: 3;
  }
-
-@media (max-width: 640px) {
-  .footballer-container {
-    top: 80px;
-   left: calc(50% - 96px);
-    }
-}  
-
-@media (min-width: 641px) and (max-width: 960px) {
-  .footballer-container {
-    top: 95px;
-    left: -170px;
-  }
-}  
-
-
-@media (min-width: 961px) {
-  .footballer-container {
-    top: 28px;
-    right: 48%;
-    }
-}  
   
 .basketballer-container {
+  top: 80px;
   position: absolute;
   z-index: 3;
  }
 
-
-@media (max-width: 640px) {
-  .basketballer-container {
-    top: 80px;
-    left: calc(50% - 151px);
-  }
-}  
-
-
-@media (min-width: 641px) and (max-width: 960px) {
-.basketballer-container {
-  right: 0;
-  top: 60px;
-  }
-}
-
-
-@media (min-width: 961px) {
-.basketballer-container {
-  left: 43%;
-  top: 30px;
-  }
-}
-
-
-@media (max-width: 640px) {
 .top-section-header {
   padding-top: 24px;
   padding-bottom: 240px;
- }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-.top-section-header {
-  padding-top: 85px;
-  padding-bottom: 20px;
- }
-}
-
-@media (min-width: 961px) {
-.top-section-header {
-  padding-top: 110px;
-  padding-bottom: 110px;
- }
 }
 
 .top-section-title {
+  margin: 0;
+  padding-left: 6.25%;
+  font-size: 50px;
   color: #e7e7e7;
   line-height: 1;
   text-transform: uppercase
 } 
-
-@media (max-width: 640px) {
-  .top-section-title {
-  margin: 0;
-  padding-left: 6.25%;
-  font-size: 50px;
-  ;
-  }
-}
-
-@media (min-width: 641px) {
-  .top-section-title {
-  margin: 0;
-  font-size: 80px;
- }
-}
 
 .top-articles-container {
   display: flex;
   flex-direction: column;
 }
 
-
 .top-article-header {
+  padding-left: 6.25%;
+  padding-right: 6.25%;
   display: flex;
   flex-direction: row;
 }
 
-@media (max-width: 960px) {
-  .top-article-header {
-    padding-left: 6.25%;
-    padding-right: 6.25%;
-  }
-}
-
-
-
-@media (max-width: 640px) {
 .top-article-01 {
   background-color: #fafafa;
   padding-top: 5.125rem;
   padding-bottom: 3.25rem;
- }
 }
 
-@media (min-width: 641px) and (max-width: 960px) {
-.top-article-01 {
-  background-color: #ffffff;
-  padding-top: 35px;
-  padding-bottom: 35px;
+.top-article-0102-number, .athlets-article-03-number, .players-article-03-number {
+  font-size: 14px;
  }
-}
-
-@media (min-width: 961px) {
-.top-article-01 {
-  background-color: #ffffff;
-  padding-top: 0;
-  padding-bottom: 60px;
- }
-}
 
 .top-article-0102-number {
   font-weight: bold;
   color: #000000;
   margin-right: 3%;
-}
-
-@media (max-width: 640px) {
-.top-article-0102-number, .athlets-article-03-number, .players-article-03-number {
-  font-size: 14px;
- }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-.top-article-0102-number, .athlets-article-03-number, .players-article-03-number {
-  font-size: 14px;
- }
-}
-
-@media (min-width: 961px) {
-.top-article-0102-number, .athlets-article-03-number, .players-article-03-number {
-  font-size: 18px;
- }
 }
 
 .top-article-0102-number:after {
@@ -430,97 +184,25 @@ body {
 
 .top-article-title {
   margin: 0;
+  font-size: 23px;
   font-weight: bold;
   line-height: 1;
   color: #c1c1c1;
   text-transform: uppercase;
 }
 
-@media (max-width: 640px) {
-.top-article-title {
-  font-size: 23px;
- }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-.top-article-title {
-  font-size: 32px;
- }
-}
-
-@media (min-width: 961px) {
-.top-article-title {
-  font-size: 36px;
- }
-}
-
-@media (max-width: 640px) {
 .top-article-0102-content, .athlets-article-03-content, .players-article-03-content {
   font-size: 15px;
   line-height: 18px;
   padding-left: 6.25%;
   padding-right: 6.25%;
  }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-.top-article-0102-content, .athlets-article-03-content, .players-article-03-content {
-  font-size: 16px;
-  line-height: 28px;
- }
- 
-  .top-section-athlets .top-section-title, .top-section-athlets .top-article-header, .top-section-athlets .top-article-0102-content, .athlets-article-03-content {
-    padding-left:37%;
-  }
-  
-  .top-section-players .top-section-title, .top-section-players .top-article-header, .top-section-players .top-article-0102-content, .players-article-03-content {
- padding-left: 4%;
- padding-right: 45.5%;
- }
-  
-}
-
-
-
-@media (min-width: 961px) {
-  .top-section-athlets .top-section-title, .top-section-athlets .top-article-header, .top-section-athlets .top-article-0102-content, .athlets-article-03-content {
-    padding-left: 52%;
-    padding-right: 6.25%;
-  }
- 
- 
-  .top-section-players .top-section-title, .top-section-players .top-article-header, .top-section-players .top-article-0102-content, .players-article-03-content {
- padding-left: 9%;
- padding-right: 50.5%;
- }
-  
-  .top-article-0102-content, .athlets-article-03-content, .players-article-03-content {
-  font-size: 20px;
-  }
-}
-
 
 .top-article-02 {
   background-color: #f5f4f9;
   padding-top: 3.75rem;
   padding-bottom: 3.125rem;
   }
-  
-
-  @media (min-width: 641px) and (max-width: 960px) {
-.top-article-02 {
-  padding-top: 35px;
-  padding-bottom: 35px;
- }
-}
-
-  @media (min-width: 961px) {
-.top-article-02 {
-  background-color: #f6f4fa;
-  padding-top: 60px;
-  padding-bottom: 60px;
- }
-}
 
 .athlets-article-03 {
   position: relative;
@@ -529,7 +211,6 @@ body {
   padding-top: 3.75rem;
   padding-bottom: 3.125rem;
 }
-
 
 .athlets-article-03-number {
   font-weight: bold;
@@ -546,7 +227,7 @@ body {
   margin-top: 0.2em;
 }
 
-.athlets-article-03-content {
+.athlets-article-03-content, .players-article-03-content {
   color: #ffffff;
 }
 
@@ -556,13 +237,6 @@ body {
   background-color: #090c35;
   padding-top: 3.75rem;
   padding-bottom: 3.125rem;
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-  .players-article-03 {
-    padding-top: 35px;
-    padding-bottom: 35px;
-  }
 }
 
 .players-article-03-number {
@@ -580,53 +254,43 @@ body {
   margin-top: 0.2em;
 }
 
-.players-article-03-content {
-  color: #ffffff;
-}
-
 .what-to-do-article, .what-to-do-article-reverse {
   display: flex;
+  flex-direction: column;  
   }
+
+.what-to-do-img {
+  height: 110vw;
+  width: 100%;
+  background-color: #0a0e34;  
+  background-size: cover;
+ }
+
+.be-active-img {
+  background-image: url(../images/be-active_640.jpg?raw=true);
+}
+
+.find-contact-img {
+  background-image: url(../images/find-contact_640.jpg?raw=true);
+}
+
+.work-it-img {
+    background-image: url(../images/work-it_640.jpg?raw=true);
+}
 
 .what-to-do-container {
     position: relative;
 }
   
-  @media (max-width: 960px) {
-   .what-to-do-article, .what-to-do-article-reverse {
-     flex-direction: column;  
-  }
-}
-  
-@media (min-width: 961px) {
-  .what-to-do-article {
-  flex-direction: row;
-  line-height: 0px;
-  }
-  
- 
-  .what-to-do-article-reverse {
-    flex-direction: row-reverse;
-    line-height: 0px;
-   }
-  
-  .img-container {
-  width: 50%;
-}
-
-  .what-to-do-image {
-  width: 100%;
-}
-
-.what-to-do-container {
-  width: 50%;
-}
-
-}
-  
 .what-to-do-number-block, .what-to-do-number-block-reverse {
   display: block;
   box-sizing: border-box;
+  font-size: 14px;
+  width: 5em;
+  height: 5em;
+  padding-top: 2.5em;
+  top: -4.2em;
+  left: 6.25%;
   background-color: #5e42b0;
   color: #f5f6f7;
   line-height: 0;
@@ -634,38 +298,6 @@ body {
   position: absolute;
   text-align: center;
  }
-
-@media(max-width: 960px) {
-  .what-to-do-number-block, .what-to-do-number-block-reverse  {
-  font-size: 14px;
-  width: 5em;
-  height: 5em;
-  padding-top: 2.5em;
-  top: -4.2em;
-  left: 6.25%;
-  }
-}
-
-@media(min-width: 961px) {
-  .what-to-do-number-block, .what-to-do-number-block-reverse  {
-  font-size: 24px;
-  width: 8.75vw;
-  height: 8.75vw;
-  padding-top: calc(4.375vw - 0.5em);
-  top: 27%;
- }
-
-
-.what-to-do-number-block  {
-  left: -4.375vw;
- }
-
-
-.what-to-do-number-block-reverse  {
-  right: -4.375vw;
- }
-}
-
 
 .what-to-do-number {
   display: inline-block;
@@ -682,43 +314,14 @@ body {
   margin-top: 0.86em;
   }
 
-
 .what-to-do-title, .what-to-do-title-reverse {
   margin: 0;
+  padding-left: 6.25%;
   padding-top: 1em;
   text-transform: uppercase;
   color: #e7e7e7;
   line-height: 1;
- }
-
-@media (max-width: 640px) {
-.what-to-do-title, .what-to-do-title-reverse {
   font-size: 28px;
-  padding-left: 6.25%;
-   }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-.what-to-do-title, .what-to-do-title-reverse {
-  font-size: 80px;
-  padding-left: 6.25%;
-  }
-}
-
-@media (min-width: 961px) {
-.what-to-do-title {
-  font-size: 80px;
-  padding-left: 6.7vw;
-  padding-top: 13.5vw;
-  }
-  
-  .what-to-do-title-reverse {
-  font-size: 80px;
-  padding-right: 6.7vw;
-  padding-left: 10%;
-  padding-top: 13.5vw;
-  }
-  
 }
 
 .what-to-do-content, .what-to-do-content-reverse {
@@ -726,63 +329,18 @@ body {
   margin: 0;
   padding-bottom: 5em;
   padding-top: 1.5em;
-  }
-
-@media (max-width: 640px) {
-.what-to-do-content, .what-to-do-content-reverse {
   padding-left: 6.25%;
   font-size: 16px;
   line-height: 20px;
  }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-.what-to-do-content, .what-to-do-content-reverse {
-  padding-left: 6.25%;
-  font-size: 24px;
-  line-height: 28px;
- }
-}
-
-@media (min-width: 961px) {
-.what-to-do-content {
-  padding-left: calc(5.75vw + 2.5%);
-  font-size: 20px;
-  line-height: 28px;
- }
-  
-  .what-to-do-content-reverse {
-    padding-right: calc(5.75vw + 2%);
-    padding-left: 10%;
-    font-size: 20px;
-    line-height: 28px;
-  }
-}
 
 .site-footer {
   position: relative;
   z-index: 1;
+  background-image: url(../images/game_767.jpg?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-}
-
-@media (max-width: 640px) {
-  .site-footer {
-  background-image: url(https://github.com/MozhaevIL/Mozhaev-mq20-Diploma/blob/master/images/game_767.jpg?raw=true);
-  }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-  .site-footer {
-  background-image: url(https://github.com/MozhaevIL/Mozhaev-mq20-Diploma/blob/master/images/game_1280.jpg?raw=true);
-  }
-}
-
-@media (min-width: 961px) {
- .site-footer {
-  background-image: url(https://github.com/MozhaevIL/Mozhaev-mq20-Diploma/blob/master/images/game_1920.jpg?raw=true);;
-  }
 }
 
 .site-footer:before {
@@ -802,75 +360,21 @@ body {
   text-align: center;
 }
 
-
 .footer-flex {
+  margin-bottom: 85px;
   display: flex;
-}
-
-@media (max-width: 960px) {
-  .footer-flex {
-flex-direction: column;
-  }
-}
-
-
-@media (max-width: 640px) {
-  .footer-flex {
-    margin-bottom: 85px;
-  }
-}
-  
-
-@media (min-width: 641px) and (max-width: 960px) {
-  .footer-flex {
-    margin-bottom: 37.5vw;
-   }
-}
-  
- @media (min-width: 961px) {
-  .footer-flex {
-    margin-bottom: 7.8vw;
-    margin-top: 12vw;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
+  flex-direction: column;
 }
 
 .surface-button {
+  margin-left: auto;
+  margin-right: auto;
+  height: 5em;
+  width: 5em;
   border: 0;
   border-radius: 0.625rem;
   background-color: #5e42b0; 
 }
-
-@media (max-width: 640px) {
- .surface-button {
-  height: 5em;
-  width: 5em;
-   }
-}
-
-@media (min-width: 640px) and (max-width: 960px) {
- .surface-button {
-  width: 130px;
-  height: 130px;
-   }
-}
-
-@media (max-width: 960px) {
-  .surface-button {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
- @media (min-width: 961px) {
- .surface-button {
-  width: 137px;
-  height: 137px;   
-   }
-}
-
 
 .surface-logo {
   height: 67%;  
@@ -878,88 +382,401 @@ flex-direction: column;
   fill: #ffffff;
 }
 
-
-@media(min-width: 961px) {
-  .download-invitation {
-    text-align: left;
-    padding-left: 2%;
-  }
-}
-
-
 .dowload-invitation-title {
+  margin: 0;
+  padding-top: 55px;
+  font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff
   }
 
-@media (max-width: 640px) {
- .dowload-invitation-title {
-  margin: 0;
-  padding-top: 55px;
-  font-size: 32px;
- }
-}
-
- @media (min-width: 961px) {
- .dowload-invitation-title {
-  margin: 0;
-  min-width: 700px;
-  font-size: 80px;
-   }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-  .dowload-invitation-title {
-    margin: 0;
-    padding-top: 80px;
-    font-size: 80px;
-  }
-}
-
-
 .download-invitation-motivation {
   margin: 0;
   color: #8379a8;
   text-transform: uppercase;
- }
-
-@media (max-width: 640px) {
-.download-invitation-motivation {
-  margin: 0;
   font-size: 14px;
  }
-}
-
-@media (min-width: 641px) {
- .download-invitation-motivation {
-  font-size: 30px;
- }
-}
 
 .footer-surface-logo-text {
   margin-left: auto;
   margin-right: auto;
   fill: #ffffff;
-  }
-
-@media (max-width: 640px) {
-.footer-surface-logo-text {
   margin-top: 80px;
   width: 40%;
-}
-}
+  }
 
+ 
 @media (min-width: 641px) and (max-width: 960px) {
 .footer-surface-logo-text {
   margin-top: 80px;
   width: 25%;
 }
+
+  .site-header {
+  background-image: url(../images/football_1280.jpg?raw=true);
+  }
+
+  .header-content {
+  padding-top: 36px;
+  padding-bottom: 88px;
+  }
+
+
+  .surface-logo-text {
+    width: 27%;
+  }  
+
+  .site-title {
+    margin-bottom: 310px;
+    padding-left: 12%;
+    font-size: 64px;
+ }
+
+  .site-header {
+  background-image: url(../images/football_1280.jpg?raw=true);
+  }
+
+  .header-content {
+  padding-top: 36px;
+  padding-bottom: 88px;
+  }
+
+  .surface-logo-text {
+    width: 27%;
+  }  
+
+  .site-title {
+    margin-bottom: 310px;
+    padding-left: 12%;
+    font-size: 64px;
+ }
+
+  .download-button {
+  font-size: 14px;
+  height: 80px;
+  width: 40%;
+  margin-right: 3.5%;
+  }
+
+  .footballer-container {
+    top: 95px;
+    left: -170px;
+  }
+
+.basketballer-container {
+  right: 0;
+  top: 60px;
+  }
+
+.top-section-header {
+  padding-top: 85px;
+  padding-bottom: 20px;
+ }
+
+.top-article-01 {
+  background-color: #ffffff;
+  padding-top: 35px;
+  padding-bottom: 35px;
+ }
+
+.top-article-0102-number, .athlets-article-03-number, .players-article-03-number {
+  font-size: 14px;
+ }
+
+.top-article-title {
+  font-size: 32px;
+ }
+
+.top-article-0102-content, .athlets-article-03-content, .players-article-03-content {
+  font-size: 16px;
+  line-height: 28px;
+ }
+ 
+  .top-section-athlets .top-section-title, .top-section-athlets .top-article-header, .top-section-athlets .top-article-0102-content, .athlets-article-03-content {
+    padding-left:37%;
+  }
+  
+  .top-section-players .top-section-title, .top-section-players .top-article-header, .top-section-players .top-article-0102-content, .players-article-03-content {
+ padding-left: 4%;
+ padding-right: 45.5%;
+ }
+
+.top-article-02 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+ }
+
+  .players-article-03 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  
+  .be-active-img {
+  background-image: url(../images/be-active_960.jpg?raw=true);
 }
 
+.find-contact-img {
+  background-image: url(../images/find-contact_960.jpg?raw=true);
+}
+
+.work-it-img {
+    background-image: url(../images/work-it_960.jpg?raw=true);
+  }
+
+.what-to-do-title, .what-to-do-title-reverse {
+  font-size: 80px;
+  padding-left: 6.25%;
+  }
+
+.what-to-do-content, .what-to-do-content-reverse {
+  padding-left: 6.25%;
+  font-size: 24px;
+  line-height: 28px;
+ }
+
+  .site-footer {
+  background-image: url(../images/game_1280.jpg?raw=true);
+  }
+
+  .footer-flex {
+    margin-bottom: 37.5vw;
+   }
+
+ .surface-button {
+  width: 130px;
+  height: 130px;
+   }
+
+  .dowload-invitation-title {
+    margin: 0;
+    padding-top: 80px;
+    font-size: 80px;
+  }
+} /*планшеты*/
+
+@media (min-width: 641px) {
+ .download-invitation-motivation {
+  font-size: 30px;
+ }
+
+  .top-section-title {
+  margin: 0;
+  font-size: 80px;
+ }
+
+  .download-buttons {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .download-button:nth-child(even) {
+    margin: 0;
+  }
+} /*планшеты и десктопы*/
+
 @media (min-width: 961px) {
+ .site-header {
+  background-image: url(../images/football_1920.jpg?raw=true);
+  }
+  
+   .header-content {
+  padding-top: 45px;
+  padding-bottom: 110px;
+  }
+
+ .surface-logo-text {
+    width: 10%;
+  }  
+
+  .site-title {    
+    margin-bottom: 220px;
+    margin-left: 10%;
+    font-size: 90px;
+ }
+
+  .site-title-second {
+  margin-left: 30%;
+ }
+
+ .download-button {
+  font-size: 14px;
+  height: 80px;
+  width: 15%;
+  min-width: 220px;
+  margin-right: 2.6%;
+  }
+
+.top-section-header {
+  padding-top: 110px;
+  padding-bottom: 110px;
+ }
+
+.top-article-01 {
+  background-color: #ffffff;
+  padding-top: 0;
+  padding-bottom: 60px;
+ }
+
+.top-article-0102-number, .athlets-article-03-number, .players-article-03-number {
+  font-size: 18px;
+ }
+
+.top-article-title {
+  font-size: 36px;
+ }
+
+
+.footballer-container {
+    top: 28px;
+    right: 48%;
+    left: auto;
+    }
+  
+.basketballer-container {
+  left: 43%;
+  top: 30px;
+  right: auto;
+  }
+
+  .top-section-athlets .top-section-title, .top-section-athlets .top-article-header, .top-section-athlets .top-article-0102-content, .athlets-article-03-content {
+    padding-left: 52%;
+    padding-right: 6.25%;
+  }
+ 
+ 
+  .top-section-players .top-section-title, .top-section-players .top-article-header, .top-section-players .top-article-0102-content, .players-article-03-content {
+ padding-left: 9%;
+ padding-right: 50.5%;
+ }
+  
+  .top-article-0102-content, .athlets-article-03-content, .players-article-03-content {
+  font-size: 20px;
+  }
+
+.top-article-02 {
+  background-color: #f6f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+ }
+
+  .what-to-do-article {
+  flex-direction: row;
+ }
+  
+ 
+  .what-to-do-article-reverse {
+    flex-direction: row-reverse;
+}
+  
+  .what-to-do-img {
+   width: 50%;
+   height: 38vw;
+}
+  
+  .be-active-img {
+    background-image: url(../images/be-active_1024.jpg?raw=true);
+}
+  
+  .find-contact-img {
+     background-image: url(../images/find-contact_1024.jpg?raw=true);
+  }
+  
+   .work-it-img {
+     background-image: url(../images/work-it_1024.jpg?raw=true);
+  }
+
+.what-to-do-container {
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+ }
+
+.what-to-do-number-block, .what-to-do-number-block-reverse  {
+  font-size: 24px;
+  width: 8.75vw;
+  height: 8.75vw;
+  padding-top: calc(4.375vw - 0.5em);
+  top: 27%;
+ }
+
+
+.what-to-do-number-block  {
+  left: -4.375vw;
+ }
+
+
+.what-to-do-number-block-reverse  {
+  right: -4.375vw;
+  left: auto;
+ }
+
+.what-to-do-title {
+  font-size: 80px;
+  padding-left: 6.7vw;
+  }
+  
+  .what-to-do-title-reverse {
+  font-size: 80px;
+  padding-right: 6.7vw;
+  padding-left: 10%;
+  }
+ 
+.what-to-do-content {
+  padding-left: calc(5.75vw + 2.5%);
+  padding-bottom: 0;
+  font-size: 20px;
+  line-height: 28px;
+ }
+  
+  .what-to-do-content-reverse {
+    padding-right: calc(5.75vw + 2%);
+    padding-bottom: 0;
+    padding-left: 10%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+ .site-footer {
+  background-image: url(../images/game_1920.jpg?raw=true);
+  }
+
+  .footer-flex {
+    margin-bottom: 7.8vw;
+    margin-top: 12vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+ .surface-button {
+  margin: 0;
+  width: 137px;
+  height: 137px;   
+   }
+
+  .download-invitation {
+    text-align: left;
+    margin-left: 2%;
+  }
+
+ .dowload-invitation-title {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  min-width: 700px;
+  font-size: 80px;
+   }
+
 .footer-surface-logo-text {
   margin-top: 13vw;
   width: 10%;
 }
-}
+} /*десктоп*/
+
+
+
+
+
+
